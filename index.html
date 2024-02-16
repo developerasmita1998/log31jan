@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome
+
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body><script>
+  function validation(){
+    // alert("hello");
+    // return false;
+       try{
+
+       
+    var name = document.getElementById("name").value;
+    var password = document.getElementById("password").value;
+    var concent = document.getElementById("concent").checked;
+
+    name = name.trim();
+    password = password.trim();
+    concent= concent.trim();
+
+
+    if(!name || !password || !concent ){
+      if(!name && !password && !concent ){
+        alert("All fields are mandatory");
+        return true;
+      }
+      if(!name ){
+      alert("please enter name");
+      return false;
+    }
+     if(!password ){
+      alert("please enter password");
+      return false;
+     }
+     if(!concent ){
+      alert("please tick out the checkbox");
+      return false;
+     }
+    }
+    else{
+      alert("All good");
+      return true;
+    }
+  
+  }
+catch{
+  alert(error);
+  return false;
+}
+  }
+</script> 
+  <div class="outer">
+  <div class="inner">
+
+  <div class="firstdiv">
+  <div><img src="/image/eps10-black-login-icon-or-logo-iloginlogo.jpg" width="30px";></div>
+ <div><h3>welcome!</h3></div>
+ <div>Sign in to your account!</div>
+</div>
+
+<div class="input-container">
+  <label for="name" class="mylabel">Name</label>
+  <input type="text" id="name" placeholder="Enter name" class="myinput">
+  <i class="fas fa-user myicon"></i>
+</div>
+
+<div class="input-container">
+  <label for="password" class="mylabel">Password</label>
+  <input type="password" id="password" placeholder="Enter Password" class="myinput">
+  <i class="fas fa-eye myicon"></i>
+</div>
+
+<div class="concentforgotcontainer">
+<div>
+<input type="checkbox" id="concent">
+<label for="concent">remember me?</label>
+</div>
+ <label>forget password?</label>
+</div>
+
+<div>
+  <button type="submit" id="submit" onclick="return validation()" class="mybutton"  >Login <i class="fas fa-arrow-right myrighticon"></i>
+  </button>
+
+</div>
+
+  </div>
+
+  </div>
+</body>
+</html>

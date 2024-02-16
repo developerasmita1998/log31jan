@@ -1,0 +1,69 @@
+.outer{
+background-color:gray;
+justify-content: center;
+display: flex;
+height: 100vh;
+}
+.inner{
+background-color: white;
+width: 30%;
+
+padding: 20px;
+
+}
+.firstdiv{
+ text-align: center;
+}
+/* CSS for label with right icon */
+   
+   .input-container {
+      position: relative;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .mylabel{
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .myinput{
+      width: 100%;
+      padding-bottom: 10px;
+      border-top: 0px;
+      
+   border-left: 0px;
+   border-right: 0px;
+   padding-top: 10px;
+    }
+ .myicon {
+      position: absolute;
+      top: 60%;
+      right: 10px; /* Adjust based on the input field's padding */
+      color: #555; /* Adjust the icon color */
+      
+    }
+    .concentforgotcontainer{
+      
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .mybutton{
+      background-color: royalblue;
+      color: white;
+      padding: 10px;
+      padding-left: 40px;
+      padding-right: 60px;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .myrighticon{
+      position: absolute;
+      top:35%;
+      right: 40px; /* Adjust based on the input field's padding */
+      color: #fff;
+    }
